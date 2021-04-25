@@ -1,0 +1,10 @@
+.l-sidebar {
+ 
+  @include breakpoint (pc) {
+
+    grid-column: 2/3;
+    grid-row: 1/3;
+    height: 100%;
+
+}
+}
