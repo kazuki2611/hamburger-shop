@@ -1,4 +1,4 @@
-<?php get_head(); ?>
+
 <?php get_header(); ?>
      
     <main class="l-main">

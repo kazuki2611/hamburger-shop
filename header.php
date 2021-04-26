@@ -20,7 +20,7 @@
    -->
 
   <!-- <title>ハンバーガーサイト</title> -->
-
+  <?php wp_head(); ?>
 </head>
 <body>
   <div class="p-wrapper">
