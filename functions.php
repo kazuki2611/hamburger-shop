@@ -31,4 +31,4 @@ add_action( 'after_setup_theme', 'hamburger_setup');
       wp_enqueue_style('fontawesome','https://use.fontawesome.com/releases/v5.6.1/css/all.css');
       }
     }
-  add_action('wp_enqueue_scripts','hamburger_script' );
+  add_action('wp_enqueue_scripts', 'hamburger_script' );
