@@ -25,12 +25,14 @@ add_action( 'after_setup_theme', 'hamburger_setup');
     // css
     wp_enqueue_style( 'style', get_template_directory_uri() . '/css/styles.css', array(), '1.0.0', 'all' );
      // js
-    wp_enqueue_script('javascript', get_template_directory_uri(). '/js/script.js', array(), '1.0.0','all');
+    // wp_enqueue_script( 'javascript', get_template_directory_uri() . '/js/script.js', array(), '1.0.0','all');
+   
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
   
    
 // font
-    function enqueue_script(){
+   
       wp_enqueue_style('fontawesome','https://use.fontawesome.com/releases/v5.6.1/css/all.css');
-      }
-    }
+  }
+    
   add_action('wp_enqueue_scripts', 'hamburger_script' );
