@@ -28,7 +28,8 @@ add_action( 'after_setup_theme', 'hamburger_setup');
     // wp_enqueue_script( 'javascript', get_template_directory_uri() . '/js/script.js', array(), '1.0.0','all');
    
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
-  
+   
+    
    
 // font
    
