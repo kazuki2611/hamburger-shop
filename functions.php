@@ -28,12 +28,16 @@ add_action( 'after_setup_theme', 'hamburger_setup');
     // wp_enqueue_script( 'javascript', get_template_directory_uri() . '/js/script.js', array(), '1.0.0','all');
    
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
-   
+    wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
     
    
 // font
-   
+
+
+       wp_enqueue_style( 'mplus-general', '//mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css', array(), '' );          
       wp_enqueue_style('fontawesome','https://use.fontawesome.com/releases/v5.6.1/css/all.css');
   }
     
   add_action('wp_enqueue_scripts', 'hamburger_script' );
+
+  
