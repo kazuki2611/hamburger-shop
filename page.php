@@ -1,50 +1,5 @@
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="Sass/styles.scss">
-  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet'>
-  <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
-  <link rel="stylesheet" type="text/css"
- href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
-<link rel="stylesheet" type="text/css"
- href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="./js/script.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
-
-  <title>page</title>
-
-</head>
-<body>
-<div class="p-wrapper-archive__serch p-wrapper-single">
-
-
-  <div class="p-grid-archive__search">
-
-  
-  <header class="l-header">
-    <div class="l-header__left">
-      <h1 class="c-title u-color">
-        Hamburger
-      </h1>
-    </div>
-    <div class="l-header__right">
-      <div class="p-searchform">
-        <form method="get" action="#">
-          <div class="p-searchform__button">
-            <input class="title" type="text" name="s" placeholder="&#xf002;" />
-            <button class="c-button" type="submit">検索</button>
-          </div>
-        </div>
-      </form>
-    </header>
-</body>
+<?php get_header(); ?> 
 <main class="l-main__single">
   <div class="p-hero p-hero__archive p-hero__single p-hero__page">
     <div class="c-header__title3 c-header__title__page">
@@ -262,3 +217,4 @@
   </div>
 </footer>
 </div>
+</body>
