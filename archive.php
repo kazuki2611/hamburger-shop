@@ -1,45 +1,4 @@
-<!DOCTYPE html>
-<html lang="jp">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="Sass/styles.scss">
-  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet'>
-  <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
-  <link rel="stylesheet" type="text/css"
- href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
-<link rel="stylesheet" type="text/css"
- href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="./js/script.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
-
-  <title>archive</title>
-
-</head>
-<body>
-  <div class=" p-wrapper--archive">
-    <div class="p-grid-archive">
-      <header class="l-header">
-        <div class="l-header__left">
-          <h1 class="c-title u-color">
-            Hamburger
-          </h1>
-        </div>
-        <div class="l-header__right">
-          <div class="p-searchform">
-            <form method="get" action="#">
-              <div class="p-searchform__button">
-                <input class="title" type="text" name="s" placeholder="&#xf002;" />
-                <button class="c-button" type="submit">検索</button>
-              </div>
-            </div>
-          </form>
-        </header>
+<?php get_header(); ?>
         <div class="l-main-archive">
 
           <div class="p-hero p-hero__archive">
@@ -119,7 +78,19 @@
           
           
             </div>
+            <?php
+    if( have_posts() ) : //1.投稿データがあるかの条件分岐。
+        while( have_posts() ) : // 2.表示する投稿データがあれば繰り返し処理開始
+            the_post(); //3.ループ処理に必要なカウント処理等
             
+           
+            
+        endwhile; // 5.繰り返し処理ここまで。投稿データがまだあればwhileに戻る。なければ終了
+    else : //6.投稿データがなければ
+        ?><p>表示する記事がありません</p><?php //7.ない時の処理
+    endif; ?> //8.条件分岐終了
+?>
+    
           
           <div class="p-page">
             
@@ -149,72 +120,11 @@
 
    
 
-    
-    
+    <?php get_sidebar(); ?> 
+    <?php get_footer(); ?>
      
       
-    <div class="l-sidebar">
-      <aside>
-  
-        <nav class="p-global-nav p-global-nav-archive">
-          <ul class="p-global-nav__list u-padding">
-            バーガー
-            <div class="p-global-nav__wrap">
-  
-              <li class="c-global-nav__item u-padding2" ><a href="">ハンバーガー</a></li>
-              <li class="c-global-nav__item"><a href="">チーズバーガー</a></li>
-              <li class="c-global-nav__item"><a href="">テリヤキバーガー</a></li>
-              <li class="c-global-nav__item"><a href="">アボカドバーガー</a></li>
-              <li class="c-global-nav__item"><a href="">フィッシュバーガー</a></li>
-              <li class="c-global-nav__item"><a href="">ベーコンバーガー</a></li>
-              <li class="c-global-nav__item"><a href="">チキンバーガー</a></li>
-            </div>
-          </ul>
-          <ul class="p-global-nav__list">
-            サイド
-            <div class="p-global-nav__wrap">
-  
-              <li class="c-global-nav__item u-padding2"><a href="">ポテト</a></li>
-              <li class="c-global-nav__item"><a href="">サラダ</a></li>
-              <li class="c-global-nav__item"><a href="">ナッゲット</a></li>
-              <li class="c-global-nav__item"><a href="">コーン</a></li>
-              
-            </div>
-          </ul>
-          <ul class="p-global-nav__list">
-            ドリンク
-            <div class="p-global-nav__wrap">
-  
-              <li class="c-global-nav__item u-padding2"><a href="">コーラ</a></li>
-              <li class="c-global-nav__item"><a href="">ファンタ</a></li>
-              <li class="c-global-nav__item"><a href="">オレンジ</a></li>
-              <li class="c-global-nav__item"><a href="">アップル</a></li>
-              <li class="c-global-nav__item"><a href="">紅茶（Ice／Hot）</a></li>
-              <li class="c-global-nav__item"><a href="">コーヒー（Ice／Hot）</a></li>
-              
-            </div>
-          </ul>
-        </nav>
-      </aside>
-      <button class="p-hamburger  is-hamburger">
-        <span></span>
-      </button>
-      <button class="p-hamburger_button">Menu</button>
-     
-    <div class="black-bg" id="js-black-bg"></div>
-  
-  
-    </div>
-    <footer class="l-footer">
-      <div class="p-container">
-        
-        <h4 class="p-container__title c-title u-size20 ">
-          ショップ情報 | ヒストリー
-        </h4>
-        <p class="p-container__text">
-          Copyright: RaiseTech
-        </p>
-      </div>
-    </footer>
+    
+    
     
 </body>

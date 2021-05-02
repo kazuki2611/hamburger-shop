@@ -1,7 +1,5 @@
 <div class="l-sidebar">
-    <aside>
-
-      <nav class="p-global-nav">
+<!-- <nav class="p-global-nav">
         <ul class="p-global-nav__list u-padding">
           バーガー
           <div class="p-global-nav__wrap">
@@ -39,8 +37,18 @@
             
           </div>
         </ul>
-      </nav>
-    </aside>
+      </nav> -->
+<?php
+                    wp_nav_menu(
+                        array(
+                        'theme_location'=>'category_nav',
+                        'menu' => 'categorymenu',
+                        'menu_class' => 'p-grand-menu c-grand-menu c-grand-menu__primary--menu',
+                        'container' => 'nav',
+                        'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
+                      )
+                    );
+                    ?>
     <button class="p-hamburger  is-hamburger">
       <span></span>
     </button>

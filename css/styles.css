@@ -1255,12 +1255,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .c-header__title__page h1 {
-    margin: 209px 0 0 86px;
-  }
-}
-
-@media (min-width: 768px) {
   .c-header__title__page {
     padding: 0;
   }
