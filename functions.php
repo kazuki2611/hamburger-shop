@@ -63,5 +63,5 @@ function wpbeg_title( $title ) {
 }
 add_filter( 'pre_get_document_title', 'wpbeg_title' );
 
-register_nav_menus( array('global_nav' => esc_html__( 'global navigation', 'wpbeg' ),'sub_nav' => esc_html__( 'sub navigation', 'wpbeg' ),    ) );
+register_nav_menus( array('global_nav' => esc_html__( 'p-global-nav', 'Hamburger' ),'sub_nav' => esc_html__( 'p-global-nav__list', 'Hamburger' ),    ) );
   

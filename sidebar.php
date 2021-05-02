@@ -42,9 +42,9 @@
                     wp_nav_menu(
                         array(
                         'theme_location'=>'category_nav',
-                        'menu' => 'categorymenu',
-                        'menu_class' => 'p-grand-menu c-grand-menu c-grand-menu__primary--menu',
-                        'container' => 'nav',
+                        'menu' => 'ハンバーガー',
+                        'menu_class' => 'p-global-nav p-global-nav__list p-global-nav__wrap c-global-nav__item u-padding',
+                        'container' => 'p-global-nav__list',
                         'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
                       )
                     );

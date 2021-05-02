@@ -571,12 +571,12 @@ body {
   }
 }
 
-.c-global-nav__item {
+.sub-menu {
   text-align: left;
   list-style: none;
 }
 
-.c-global-nav__item a {
+.sub-menu a {
   font-size: 20px;
   font-family: 'M+ Type-1 (general-j) regular';
   display: block;
