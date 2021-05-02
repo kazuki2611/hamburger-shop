@@ -61,7 +61,7 @@ function wpbeg_title( $title ) {
   }
   return $title;
 }
-add_filter( 'pre_get_document_title', 'wpbeg_title' );
+
 
 register_nav_menus( array('global_nav' => esc_html__( 'global navigation', 'wpbeg' ),'sub_nav' => esc_html__( 'sub navigation', 'wpbeg' ),    ) );
   
