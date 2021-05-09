@@ -1,10 +1,6 @@
 <<<<<<< HEAD
 <?php get_header(); ?> 
 
-=======
-
-<?php get_header(); ?> 
->>>>>>> 3f10d85425cd5252c0ec97654d1bb9fdd7f57e04
 <main class="l-main__single">
   <div class="p-hero p-hero__archive p-hero__single p-hero__page">
     <div class="c-header__title3 c-header__title__page">

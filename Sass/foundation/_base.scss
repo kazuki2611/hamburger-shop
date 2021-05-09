@@ -1,7 +1,9 @@
 body {
   &.is-open {
     position: fixed;
-    
+    @include breakpoint (pc) {
+      position: static;
+    }
   }
   // font-family: 'Roboto','M+ C Type-1 (basic latin) Regular','M+ Type-1 (general-j) Regular';
 
@@ -19,4 +21,7 @@ body {
 
 body {
   font-family: 'M+ 1m bold';
+}
+#wpadminbar {
+  position: fixed;
 }

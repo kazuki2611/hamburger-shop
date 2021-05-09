@@ -11,6 +11,36 @@
   z-index: 200;
   overflow-y: scroll;/* メニューが多くなったらスクロールできるように */
   // height: 100vh;
+ li {
+ list-style: none;
+ font-size: 24px;
+    padding: 24px 0 0 40px;
+    text-align: left;
+    color: #707070;
+    ul {
+      li {
+        padding: 0;
+
+        a {
+          font-family: $font-regular;
+          font-size: 20px;
+         padding-top: 0;
+         padding: 24px 0 0 20px;
+         display: block;
+  
+  
+        }
+      }
+    }
+   
+   
+  a {
+    text-decoration: none;
+   
+    color:$text-color;
+    font-family: $font-bold;
+  }
+ }
   
   @include breakpoint(tablet) {
    width: 367px;
@@ -32,18 +62,20 @@ position: static;
  
   &.is-open {
    
-    transition:  .6s;
-    right: 0;
+     
+     transition:  .6s;
+     right: 0;
+   
   }
 }
 .p-global-nav__list {
-  font-size: 24px;
-  padding:34px 0 0 46px ;
-  text-align: left;
-  color: $text-color;
-  // margin-bottom: 40px;
-  // margin: 0 0 40px 46px;
-  font-family: 'M+ Type-1 (general-j) bold';
+  // font-size: 24px;
+  // padding:34px 0 0 46px ;
+  // text-align: left;
+  // color: $text-color;
+  // // margin-bottom: 40px;
+  // // margin: 0 0 40px 46px;
+  // font-family: 'M+ Type-1 (general-j) bold';
   @include breakpoint (pc) {
    
   }
