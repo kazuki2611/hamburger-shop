@@ -4,11 +4,14 @@
  &__3 {
   font-size: 16px;
     padding-top: 24px;
+    
     @include breakpoint (pc) {
       font-size: 24px;
       padding-top: 47px;
     }
-    
+    h1 {
+     
+    }
     &__single {
       font-size: 24px;
       font-family: 'M+ Type-1 (general-j) bold';
@@ -22,6 +25,14 @@
    
  }
  &__4 {
+  
+   a {
+    font-size: 16px;
+    font-family: 'M+ Type-1 (general-j) bold';
+    color: #fff;
+    padding: 31px 0 0 0px;
+    text-decoration: none;
+   }
    &__single {
      font-size: 20px;
      font-family: 'M+ Type-1 (general-j) bold';
