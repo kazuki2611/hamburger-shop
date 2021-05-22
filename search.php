@@ -44,7 +44,7 @@
           <div class="p-menu__box__wrapper">
 
             <h3 class="c-menu__title"><?php the_title(); ?></h3>
-            <h4 class="c-headline__4"><?php the_tags(); ?></h4>
+           
             <?php the_content(); ?>
 
             <button class="c-menu__button">
