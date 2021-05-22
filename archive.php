@@ -38,7 +38,7 @@
             <h3 class="c-menu__title"><?php the_title(); ?></h3>
             <h4 class="c-headline__4"><?php the_tags(); ?></h4>
             <?php the_content(); ?>
-          
+
             <button class="c-menu__button">
               <a href="<?php the_permalink(); ?>">
                 詳しく見る
